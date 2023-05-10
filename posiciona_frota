@@ -1,0 +1,19 @@
+def posiciona_frota(dic_pos_navio):
+    grid = [
+      [0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0],
+      [0,0,0,0,0,0,0,0,0,0],
+  ]
+
+    for nome_navio, lista in dic_pos_navio.items():
+        for posicao in lista:
+            for linha, coluna in posicao:
+                grid[linha][coluna] = 1
+    return grid 
