@@ -1,0 +1,46 @@
+
+frota = {
+    "porta-aviões":[1],
+    "navio-tanque":[2],
+    "contratorpedeiro":[3],
+    "submarino": [4],
+}
+
+int(input("qual a embarcação"))
+
+for embarcação in frota:
+    NOME = embarcação[4]
+    TAMANHO = embarcação[4]
+    print ("Insira as informações referentes ao navio NOME que possui tamanho TAMANHO")
+
+    if embarcacao == 1:
+        NOME = "porta-aviões"
+    TAMANHO = 4
+    if embarcacao == 2:
+        NOME = "navio-tanque"
+    TAMANHO = 3
+    if embarcacao == 3:
+        NOME = "contratorpedeiro"
+    TAMANHO = 2
+    if embarcacao == 4:
+        NOME = "submarino"
+    TAMANHO = 1 
+
+    linha = int(input("Digite a linha em que deseja posicionar a sua frota (1 a 10): "))
+    coluna = int(input("Digite a coluna em que deseja posicionar a sua frota (1 a 10): "))
+    orientacao = int(input("Digite 1 para posicionar a sua frota na vertical ou 2 para posicionar na horizontal: "))
+
+if linha < 1 or linha > 10:
+        print ("coordenadas invalidas") 
+        if coluna < 1 or coluna > 10:
+            print("Coordenadas inválidas")
+
+if embarcação == "submarino":
+        linha = int(input("Digite a linha em que deseja posicionar a sua frota (1 a 10): "))
+        coluna = int(input("Digite a coluna em que deseja posicionar a sua frota (1 a 10): "))
+
+if posicao invalida:
+    print ("Esta posição não está válida!")
+        linha = int(input("Digite a linha em que deseja posicionar a sua frota (1 a 10): "))
+    coluna = int(input("Digite a coluna em que deseja posicionar a sua frota (1 a 10): "))
+    orientacao = int(input("Digite 1 para posicionar a sua frota na vertical ou 2 para posicionar na horizontal: "))
